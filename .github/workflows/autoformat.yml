@@ -20,6 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          token: ${{ secrets.PAT }}
           ref: ${{ github.head_ref }}
       # Add a step to lint HTML file with Prettier
       - name: Run Prettier to fix code style issues
