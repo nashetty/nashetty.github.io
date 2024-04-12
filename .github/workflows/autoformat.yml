@@ -24,7 +24,7 @@ jobs:
           ref: ${{ github.head_ref }}
       # Add a step to lint HTML file with Prettier
       - name: Run Prettier to fix code style issues
-        run: npx prettier --write .
+        run: npx prettier --write . --ignore-path .prettierignore
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
