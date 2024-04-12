@@ -38,6 +38,12 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+          
+        # Add a step to lint HTML file with Prettier
+      - name: Lint HTML with Prettier
+        run: npx prettier --check index.html
+    
+      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
