@@ -43,14 +43,14 @@ jobs:
       - name: Run Prettier to fix code style issues
         run: npx prettier --write .
         
-      # Add a step to commit and push the changes made by Prettier
-      - name: Commit and push changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Auto-format code with Prettier"
-          git push https://github.com/nashetty/nashetty.github.io.git ${{ secrets.PAT }}:main
+      # # Add a step to commit and push the changes made by Prettier
+      # - name: Commit and push changes
+      #   run: |
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
+      #     git add .
+      #     git commit -m "Auto-format code with Prettier"
+      #     git push https://github.com/nashetty/nashetty.github.io.git ${{ secrets.PAT }}:main
       
       
       - name: Deploy to GitHub Pages
