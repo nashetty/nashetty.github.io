@@ -41,7 +41,7 @@ jobs:
           
         # Add a step to lint HTML file with Prettier
       - name: Lint HTML with Prettier
-        run: npx prettier --check ../index.html
+        run: npx prettier --check ../../index.html
     
       
       - name: Deploy to GitHub Pages
