@@ -16,7 +16,7 @@ jobs:
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
       contents: write
-      
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -25,7 +25,7 @@ jobs:
       # Add a step to lint HTML file with Prettier
       - name: Run Prettier to fix code style issues
         run: npx prettier --write .
-        
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Auto-format code with Prettier
