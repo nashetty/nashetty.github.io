@@ -31,14 +31,14 @@ body::after {
 }
 
 body::before {
-  background-color: #ff9424;
+  background-color: #023047;
   width: 40vw;
   left: 0;
   font-family: "Anta", sans-serif;
 }
 
 body::after {
-  background-color: #023047;
+  background-color: #ff9424;
   width: 60vw;
   right: 0;
 }
@@ -206,4 +206,9 @@ svg {
 
 .link-to-sections {
   padding: 10px;
+}
+
+.project img {
+  height: 20rem;
+  border-radius: 15px;
 }
