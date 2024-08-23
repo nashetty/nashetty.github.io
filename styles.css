@@ -11,10 +11,10 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  /* backdrop-filter: blur(5px); */
 }
 
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
 }
@@ -23,7 +23,6 @@ html, body {
 body::before,
 body::after {
   content: "";
-  /* width: 50vw; */
   position: fixed;
   height: 100%;
   top: 0;
@@ -57,12 +56,6 @@ h1 {
 }
 
 .cont {
-  /* width: 100%; */
-  /* display: grid; */
-  /* flex-direction: column; */
-  /* flex: auto; */
-  /* justify-content: center; */
-  /* align-items: start; */
   position: relative;
   z-index: 1;
   bottom: 0;
@@ -88,11 +81,6 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-   /* text-align: left; */
-  /* align-content: space-between; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-around; */
 }
 
 .content h1,
@@ -104,14 +92,11 @@ p {
   font-size: 1.5rem;
 }
 .text,
-.contact, .skills {
+.contact,
+.skills {
   max-width: 900px;
 }
-/* .picture {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-} */
+
 .picture img {
   border-radius: 100%;
   max-height: 250px;
@@ -125,22 +110,22 @@ p {
   color: blue;
 }
 
-table, .education, .completion{
-  /* border: #023047 solid 1px; */
+table,
+.education,
+.completion {
   border: none;
   border-radius: 5px;
-  color: #000000A6;
+  color: #000000a6;
 }
 
-td, .education, .completion {
+td,
+.education,
+.completion {
   border: none;
   padding: 10px;
   font-weight: 800;
   font-size: 1rem;
   border-radius: 5px;
-  /* border: #023047 solid 1px; */
-  /* width: 300px; */
-  /* height: 30px; */
 }
 
 .skills-cell {
@@ -152,25 +137,16 @@ td, .education, .completion {
 .skills-cell p {
   font-size: 1rem;
   font-weight: 800;
-  color: #000000A6;
+  color: #000000a6;
   margin-bottom: 0;
 }
 
 .skills-cell img {
   height: 2.5rem;
-  /* margin: 30px; */
-  /* padding-right: 10px; */
 }
 .completion {
-  /* width: 100px; */
-  /* text-align: left; */
   margin-top: 10px;
 }
-
-/* .education {
-  width: 600px;
-  padding-left: 30px;
-} */
 
 .education img {
   width: 2rem;
@@ -179,10 +155,9 @@ td, .education, .completion {
 
 svg {
   height: 2.5rem;
-  /* margin: 30px; */
 }
 
-.navbar-expand-lg .bg-white{
+.navbar-expand-lg .bg-white {
   margin-left: -10px;
 }
 
@@ -198,26 +173,25 @@ svg {
   p {
     font-size: 1.25rem;
   }
-  .education-container .row:not(:first-child) .education{
+  .education-container .row:not(:first-child) .education {
     border-top: 1px solid #00000022;
     border-radius: 0px;
   }
 
   .cont {
     margin-top: 50px;
-  margin-left: 30px;
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 767px) and (max-width: 1000px) {
   .cont {
     margin-top: 50px;
-  margin-left: 120px;
+    margin-left: 120px;
   }
-  
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
   .picture img {
     border-radius: 100%;
     max-height: 200px;
@@ -228,7 +202,6 @@ svg {
   .text h1 {
     font-size: 1.5rem;
   }
-  
 }
 
 .link-to-sections {
