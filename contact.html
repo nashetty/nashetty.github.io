@@ -21,49 +21,83 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="cont">
+    <div id="overlay">
+      <div class="cont">
         <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid  bg-white">
-              <a class="navbar-brand" href="./index.html">nadashetty.me</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link" href="./index.html">Home</a>
-                  <a class="nav-link" href="#">About Me</a>
-                  <a class="nav-link" href="#">Skills</a>
-                  <a class="nav-link" href="#">Projects</a>
-                  <a class="nav-link active" aria-current="page" href="./contact.html">Contact</a>
-                </div>
+          <div class="container-fluid bg-white">
+            <a class="navbar-brand" href="./index.html">nadashetty.me</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="./index.html">Home</a>
+                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="./skills.html">Skills</a>
+                <a class="nav-link" href="#">Projects</a>
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./contact.html"
+                  >Contact</a
+                >
               </div>
             </div>
-          </nav>
-      <div class="content">
-        <div class="contact">
-          <h1>Contact me</h1>
-          <p><a href="">
-            <img src="./icons/email.png" alt="email icon" style="height: 30px; padding-right: 10px;">
-            nadashetty.swe@gmail.com
-        </a>
-          </p>
-          <p><a href="https://nadashetty.me/">
-            <img src="./icons/url.png" alt="url icon" style="height: 30px; padding-right: 10px;">
-            https://nadashetty.me/
-          </a></p>
-          <p><a href="https://github.com/nashetty/">
-            <img src="./icons/github.png" alt="github icon" style="height: 30px; padding-right: 10px;">
-            https://github.com/nashetty/
-          </a></p>
-          <p><a href="https://linkedin.com/in/nada-shetty">
-            <img src="./icons/linkedin.png" alt="linkedin icon" style="height: 30px; padding-right: 10px;">
-            https://linkedin.com/in/nada-shetty
-          </a></p>
-        </div>
-        <div class="picture">
-          <img
-            src="https://media.licdn.com/dms/image/D4E03AQE-LawNJGlzlQ/profile-displayphoto-shrink_800_800/0/1693160275345?e=1723075200&v=beta&t=p6fBYxiovzWLQb74JyKxF6kwlKQxcpEQwq1TPTqaibU"
-          />
+          </div>
+        </nav>
+        <div class="content">
+          <div class="row justify-content-center row-cols-1 row-cols-md-2">
+            <div class="contact col">
+              <h1>Contact me</h1>
+              <p>
+                <a href="">
+                  <img
+                    src="./icons/email.png"
+                    alt="email icon"
+                    style="height: 30px; padding-right: 10px"
+                  />nadashetty.swe@gmail.com
+                </a>
+              </p>
+              <p>
+                <a href="https://nadashetty.me/" target="_blank">
+                  <img
+                    src="./icons/url.png"
+                    alt="url icon"
+                    style="height: 30px; padding-right: 10px"
+                  />https://nadashetty.me/
+                </a>
+              </p>
+              <p>
+                <a href="https://github.com/nashetty/" target="_blank">
+                  <img
+                    src="./icons/github.png"
+                    alt="github icon"
+                    style="height: 30px; padding-right: 10px"
+                  />https://github.com/nashetty/
+                </a>
+              </p>
+              <p>
+                <a href="https://linkedin.com/in/nada-shetty" target="_blank">
+                  <img
+                    src="./icons/linkedin.png"
+                    alt="linkedin icon"
+                    style="height: 30px; padding-right: 10px"
+                  />https://linkedin.com/in/nada-shetty
+                </a>
+              </p>
+            </div>
+            <div class="picture col">
+              <img src="./icons/photo.jpeg" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

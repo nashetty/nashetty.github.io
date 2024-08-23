@@ -1,47 +1,79 @@
-/* Style for the body to set background colors */
 body {
   margin: 0;
   height: 100dvh;
   display: flex;
   position: relative;
+  flex-direction: column;
+}
+
+#overlay {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /* backdrop-filter: blur(5px); */
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
 }
 
 /* Split background colors */
 body::before,
 body::after {
   content: "";
-  width: 50%;
+  /* width: 50vw; */
   position: fixed;
   height: 100%;
   top: 0;
   z-index: -1;
+  filter: blur(2px);
 }
 
 body::before {
   background-color: #ff9424;
+  width: 40vw;
   left: 0;
   font-family: "Anta", sans-serif;
 }
 
 body::after {
   background-color: #023047;
+  width: 60vw;
   right: 0;
 }
 
+.container {
+  margin-left: 0;
+}
+
+h1 {
+  color: #023047;
+}
+
+.active {
+  color: #023047;
+}
+
 .cont {
-  width: 100%;
-  display: grid;
-  flex-direction: column;
+  /* width: 100%; */
+  /* display: grid; */
+  /* flex-direction: column; */
+  /* flex: auto; */
   /* justify-content: center; */
-  align-items: start;
+  /* align-items: start; */
   position: relative;
   z-index: 1;
   bottom: 0;
-  margin-top: 100px;
-  margin-left: 100px;
+  margin-top: 50px;
+  margin-left: 250px;
   background-color: white;
   margin-right: 0;
-  padding: 20px;
+  padding: 20px 0 0 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  min-height: 100%;
 }
 
 .cont nav {
@@ -54,32 +86,35 @@ body::after {
   background-color: white;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  align-content: space-between;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+   /* text-align: left; */
+  /* align-content: space-between; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-around; */
 }
 
 .content h1,
 p {
-  padding: 30px;
+  padding: 30px 10px;
 }
 
 p {
   font-size: 1.5rem;
 }
-.text, .contact {
+.text,
+.contact, .skills {
   max-width: 900px;
 }
-.picture {
+/* .picture {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-}
+} */
 .picture img {
   border-radius: 100%;
-  height: 300px;
+  max-height: 250px;
 }
 
 .contact a {
@@ -88,4 +123,114 @@ p {
 
 .contact a:hover {
   color: blue;
+}
+
+table, .education, .completion{
+  /* border: #023047 solid 1px; */
+  border: none;
+  border-radius: 5px;
+  color: #000000A6;
+}
+
+td, .education, .completion {
+  border: none;
+  padding: 10px;
+  font-weight: 800;
+  font-size: 1rem;
+  border-radius: 5px;
+  /* border: #023047 solid 1px; */
+  /* width: 300px; */
+  /* height: 30px; */
+}
+
+.skills-cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.skills-cell p {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #000000A6;
+  margin-bottom: 0;
+}
+
+.skills-cell img {
+  height: 2.5rem;
+  /* margin: 30px; */
+  /* padding-right: 10px; */
+}
+.completion {
+  /* width: 100px; */
+  /* text-align: left; */
+  margin-top: 10px;
+}
+
+/* .education {
+  width: 600px;
+  padding-left: 30px;
+} */
+
+.education img {
+  width: 2rem;
+  margin: 10px 10px 10px 0;
+}
+
+svg {
+  height: 2.5rem;
+  /* margin: 30px; */
+}
+
+.navbar-expand-lg .bg-white{
+  margin-left: -10px;
+}
+
+@media screen and (max-width: 767px) {
+  .text h1 {
+    text-align: center;
+  }
+  .picture {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+  .education-container .row:not(:first-child) .education{
+    border-top: 1px solid #00000022;
+    border-radius: 0px;
+  }
+
+  .cont {
+    margin-top: 50px;
+  margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1000px) {
+  .cont {
+    margin-top: 50px;
+  margin-left: 120px;
+  }
+  
+}
+
+@media screen and (max-width: 400px){
+  .picture img {
+    border-radius: 100%;
+    max-height: 200px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .text h1 {
+    font-size: 1.5rem;
+  }
+  
+}
+
+.link-to-sections {
+  padding: 10px;
 }
