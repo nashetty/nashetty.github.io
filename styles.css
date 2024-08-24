@@ -75,6 +75,10 @@ h1 {
   font-size: 1.75rem;
 }
 
+.on-top {
+  z-index: 100;
+}
+
 .content {
   background-color: white;
   padding: 20px;
